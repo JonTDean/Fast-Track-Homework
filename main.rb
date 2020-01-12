@@ -56,3 +56,6 @@ def potato_family(plants)
     end
 end
   puts potato_family(["potato", "pear", "apple", "yam", "sweet potato"])
+
+
+  # Just wanted to note that adding multiple strings within a single .include?() parameter is not legal. It only finds the string that has the given parameter.
