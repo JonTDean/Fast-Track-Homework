@@ -37,22 +37,22 @@ puts tick_boom(8)
 
 #POTATO FAMILY
 def potato_family(plants)
-    i = 0
-    plantsL = plants.length
+  i = 0
+  plantsL = plants.length
 
     while i < plants.length
     
       plantsI = plants[i]
 
-      if plantsI.include?("potato" || "sweet potato")
-        puts "Yes, #{plants[i]} belongs to potatos."
-      elsif plantsI.include?("yam")
-        puts "Yes, #{plants[3]} belongs to potatos."
-      else
-        puts "nope, #{plants[i]} is definitely not related to a potato."
-      end
+        if plantsI.include?("potato") || plantsI.include?("yam") || plantsI.include?("sweet potato")
+          puts "Yes, #{plants[i]} belongs to potatos."
+        elsif plantsI.include?("yam")
+          puts "Yes, #{plants[3]} belongs to potatos."
+        else
+          puts "nope, #{plants[i]} is definitely not related to a potato."
+        end
 
-     i += 1 
+      i += 1 
     end
-  end
+end
   puts potato_family(["potato", "pear", "apple", "yam", "sweet potato"])
